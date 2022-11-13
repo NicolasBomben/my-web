@@ -1,5 +1,6 @@
 //components
-import Header from './components/Header'
+import Header from './components/Header';
+import AboutMe from './components/AboutMe';
 
 //style
 import './App.css';
@@ -8,7 +9,7 @@ function App() {
   return (
     <div>
       <Header />
-      <h1>Mi portfolio</h1>
+      <AboutMe />
     </div>
   );
 }

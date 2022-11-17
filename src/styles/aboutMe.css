@@ -12,13 +12,14 @@
 }
 
 .about-primary-title{
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--font-color);
     padding-bottom: 2rem;
 }
 
 .about-secondary-title{
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 300;
     color: var(--white-color);
     padding-bottom: 2rem;
     line-height: 2.5rem;  
@@ -26,19 +27,96 @@
 
 .about-text{
     font-size: 1rem;
+    font-weight: 100;
     color: var(--white-color);
     line-height: 1.5rem;
-    text-align: justify;
+}
+
+.links-container{
+    display: flex;
+    flex-direction:  row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10rem;
+    margin-top: 1.5rem;
+    gap: 2rem;
+
 }
 
 .about-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-    margin-left: 5rem;
     width: 8rem;
     height: 2.5rem;
     border-radius: 20px;
     border-style: none;
+    color: var(--white-color);
+    background-color: var(--black-color);
 }
+
+.about-btn:hover{
+    border: 4px solid var(--tertiary-color);
+}
+
+.about-icon{
+    width: 60px;
+    height: 60px;
+}
+
+.about-icon:hover{
+    background-color: var(--tertiary-color);
+    border-radius: 40px;
+}
+
+/*MEDIA QUERY RESPONSIVE MOBILE*/
+@media screen and (max-width: 425px){
+
+    .about-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 0.5rem;
+    }
+
+    .about-secondary-title{
+        text-align: center;
+    }
+
+    .about-text{
+        text-align: center;
+    }
+
+    .links-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 320px){
+
+    .about-container{
+        max-width: 320px;
+    }
+
+    .about-secondary-title{
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.5rem;
+    }
+
+    .about-text{
+        font-size: 0.75rem;
+        text-align: center;
+        line-height: 1rem;
+    }
+
+    .links-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+    

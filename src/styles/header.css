@@ -7,7 +7,7 @@
     padding: 1rem 3rem;
     background-color: var(--background-color);
     color: var(--white-color);
-    box-shadow: 0 2px 2px 2px var(--main-color);
+    box-shadow: 0 1px 1px 1px var(--main-color);
 }
 
 .brand-name{
@@ -27,8 +27,14 @@
 
 .navigation-menu li{
     font-size: 1.2rem;
+    font-weight: 300;
     list-style-type: none;
     margin: 0 1rem;
+}
+
+.navigation-menu li:hover{
+    font-weight: 400;
+    color: var(--font-color);
 }
 
 
@@ -36,7 +42,7 @@
     border: 0;
     border-radius: 50%;
     background-color: var(--background-color);
-    transition: var(--background-color) 0.2s ease-in-out;
+    transition: var(--background-color) 0.6s ease-in-out;
     position: absolute;
     top: 50%;
     right: 25px;
